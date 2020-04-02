@@ -12,5 +12,4 @@ app.use(bodyParser.json());
 app.use('/', routes);
 app.use(errorLogger);
 
-app.listen();
-console.log('Server ONline localhost:1234');
+app.listen(process.env.PORT || 1234);
