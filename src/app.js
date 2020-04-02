@@ -12,5 +12,5 @@ app.use(bodyParser.json());
 app.use('/', routes);
 app.use(errorLogger);
 
-app.listen(1234);
+app.listen();
 console.log('Server ONline localhost:1234');
