@@ -8,6 +8,13 @@ router.get('/', (req, res, next) => {
     })
 })
 
+router.get('/heroku', (req, res, next) => {
+    res.json({
+        'status': 'success',
+        'message': 'Heroku serverip' + res.ip
+    })
+})
+
 router.all('*', (req, res, next) => {
     let err = new Error('404, Page not found!!')
     err.status = 404
